@@ -69,6 +69,8 @@ class TTTGui:
 
         self.root.mainloop()
     
+    def setupGui(self):
+        self.btn_
 
     
 
