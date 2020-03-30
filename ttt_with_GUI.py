@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-import tttForGui
+import GUI
 import os
 import time
 from functools import partial
@@ -16,7 +16,7 @@ class TTTGui:
         self.label = Label(self.root, text= self.label_text)
         self.label.grid(row=0, columnspan = 3)
         self.button_list = []
-        self.game_mode = input("1. Single player\n2.Two player")
+        self.game_mode = input("1. Single player\n2.Two player\n")
         self.gui()
           
 
@@ -74,6 +74,6 @@ class TTTGui:
 
     
 
-setup = tttForGui.OnePlayerMode()
+setup = GUI.OnePlayerMode()
 play = TTTGui(setup)
 
